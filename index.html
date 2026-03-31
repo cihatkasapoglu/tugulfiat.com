@@ -5,7 +5,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuğul Fiat | Ostim Fiat Çıkma Parça & Yedek Parça Ankara</title>
     
-    <meta name="description" content="Ankara Ostim'de Fiat çıkma parça uzmanı Tuğul Fiat. Doblo, Egea, Fiorino, Linea çıkma motor ve şanzıman seçenekleri. 81 ile kargo imkanı.">
+    <meta name="description" content="Ankara Ostim'de Fia<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuğul Fiat | Ostim Fiat Çıkma Parça & Yedek Parça</title>
+    
+    <meta name="description" content="Tuğul Fiat Ankara Ostim'de 81 ile anlaşmalı kargo imkanıyla Fiat çıkma motor, şanzıman ve yedek parça satışı yapmaktadır.">
+    <meta name="keywords" content="Ostim Fiat Çıkma Parça, Ankara Fiat Yedek Parça, Fiat Çıkma Motor, Fiat Çıkma Şanzıman, Tuğul Fiat">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --fiat-blue: #002D62;
+            --fiat-red: #C60C30;
+            --bg-white: #ffffff;
+            --light-gray: #f4f7f6;
+            --text-dark: #222222;
+            --whatsapp: #25D366;
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-white); color: var(--text-dark); overflow-x: hidden; }
+
+        /* Kayan Yazı (Ticker) */
+        .ticker-wrap {
+            width: 100%; overflow: hidden; background: var(--fiat-red); color: white;
+            padding: 8px 0; font-weight: 700; font-size: 14px; text-transform: uppercase;
+        }
+        .ticker {
+            display: flex; white-space: nowrap; animation: ticker 30s linear infinite;
+        }
+        .ticker span { padding: 0 50px; }
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--bg-white); padding: 15px 5%; display: flex; 
+            justify-content: space-between; align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;
+        }
+        .logo img { height: 65px; object-fit: contain; }
+        .nav-info { display: flex; gap: 20px; }
+        .nav-btn {
+            padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 14px;
+            display: flex; align-items: center; gap: 8px; transition: var(--transition);
+        }
+        .nav-btn.blue { background: var(--fiat-blue); color: white; }
+        .nav-btn.outline { border: 2px solid var(--fiat-blue); color: var(--fiat-blue); }
+        .nav-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+
+        /* Hero */
+        .hero {
+            height: 60vh; background: linear-gradient(rgba(0,45,98,0.6), rgba(0,45,98,0.6)), url('tugul-fiat-dukkan.jpeg') center/cover;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center; padding: 0 20px;
+        }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); text-transform: uppercase; margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.3rem; font-weight: 300; letter-spacing: 2px; }
+
+        /* Main Section */
+        .container { padding: 80px 5%; background-color: var(--light-gray); }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 32px; color: var(--fiat-blue); text-transform: uppercase; }
+        .section-header .divider { width: 80px; height: 5px; background: var(--fiat-red); margin: 15px auto; border-radius: 5px; }
+
+        /* Product Cards */
+        .product-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;
+        }
+        .product-card {
+            background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow);
+            transition: var(--transition); border: 1px solid #eee; display: flex; flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-10px); border-color: var(--fiat-red); }
+        
+        .product-img { width: 100%; height: 220px; overflow: hidden; position: relative; }
+        .product-img img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .product-badge {
+            position: absolute; top: 15px; right: 15px; background: var(--fiat-red);
+            color: white; padding: 5px 12px; font-size: 12px; font-weight: 800; border-radius: 5px;
+        }
+        
+        .product-body { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-body h3 { font-size: 18px; color: var(--fiat-blue); margin-bottom: 12px; height: 50px; overflow: hidden; }
+        .product-body p { font-size: 13px; color: #666; margin-bottom: 20px; flex-grow: 1; }
+
+        .btn-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .btn {
+            padding: 12px; border-radius: 8px; font-size: 13px; font-weight: 700; text-align: center;
+            display: flex; align-items: center; justify-content: center; gap: 6px; transition: var(--transition);
+        }
+        .btn-whatsapp { background: var(--whatsapp); color: white; }
+        .btn-call { background: var(--fiat-blue); color: white; }
+        .btn:hover { filter: brightness(1.1); }
+
+        /* Footer */
+        footer { background: white; padding: 60px 5% 30px; text-align: center; border-top: 5px solid var(--fiat-blue); }
+        .footer-logo { height: 50px; margin-bottom: 20px; }
+        .footer-info { font-size: 14px; color: #555; margin-bottom: 30px; }
+        .credit { border-top: 1px solid #eee; padding-top: 20px; font-size: 12px; color: #999; }
+        .credit a { color: var(--fiat-red); font-weight: 700; }
+
+        @media (max-width: 768px) {
+            .nav-info { display: none; }
+            .hero { height: 40vh; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>🚀 TÜRKİYE'NİN 81 İLİNE ANLAŞMALI KARGO İMKANI</span>
+            <span>🛠️ TÜM PARÇALARIMIZ TEST EDİLMİŞ VE MUAYYERDİR</span>
+            <span>📍 ANKARA OSTİM'İN LİDER FİAT ÇIKMACISI: TUĞUL FİAT</span>
+            <span>📞 0536 656 23 63 - 0531 290 29 77</span>
+            <span>🚀 TÜRKİYE'NİN 81 İLİNE ANLAŞMALI KARGO İMKANI</span>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo"><img src="tugul-fiat.jpeg" alt="Tuğul Fiat"></div>
+        <div class="nav-info">
+            <a href="tel:05366562363" class="nav-btn outline"><i class="fa fa-phone"></i> 0536 656 23 63</a>
+            <a href="https://wa.me/905312902977" class="nav-btn blue"><i class="fab fa-whatsapp"></i> WhatsApp Destek</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>TUĞUL FİAT OTOMOTİV</h1>
+        <p>Ostim Ankara | Fiat Çıkma Parça Merkezi</p>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <h2>GÜNCEL ÜRÜN STOKLARIMIZ</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="product-grid" id="product-container">
+            </div>
+    </main>
+
+    <footer>
+        <img src="tugul-fiat.jpeg" alt="Tuğul Fiat" class="footer-logo">
+        <div class="footer-info">
+            <p><strong>Adres:</strong> Ostim OSB Mah. 1126. Cad. No: 7 Yenimahalle/Ankara</p>
+            <p><strong>Tel:</strong> 0536 656 23 63 | 0531 290 29 77</p>
+        </div>
+        <div class="credit">
+            Tuğul Fiat Çıkma Yedek Parça için hazırlanmıştır. <br>
+            © 2026 <strong>Nokta Sosyal Medya</strong> | <a href="https://www.noktasosyalmedya.com.tr" target="_blank">www.noktasosyalmedya.com.tr</a>
+        </div>
+    </footer>
+
+    <script>
+        // Ürün Listesi (60+ Ürün Eksiksiz)
+        const products = [
+            { img: "1-6-doblo-sanziman-cikma.jpeg", title: "1.6 Doblo Çıkma Şanzıman", desc: "1.6 Multijet motorlar için uyumlu, vites geçişleri kontrol edilmiş muayyer şanzıman." },
+            { img: "1-6-doblo-sanziman-temiz-cikma.jpeg", title: "1.6 Doblo Şanzıman Temiz", desc: "Düşük kilometreli araçtan sökülmüş, kondisyonu mükemmel durumda temiz şanzıman." },
+            { img: "1-6-doblo-sanziman-tugul-fiat.jpeg", title: "1.6 Doblo Komple Şanzıman", desc: "Tuğul Fiat güvencesiyle, tüm bakımları yapılmış 1.6 Doblo şanzımanı." },
+            { img: "1-6-doblo-sanziman.jpeg", title: "1.6 Doblo Vites Kutusu", desc: "81 ile kargo imkanıyla, stoktan hemen teslim Doblo 1.6 şanzıman." },
+            { img: "fiat-albea-1-2-8-valf-cikma-motor.jpeg", title: "Albea 1.2 8 Valf Motor", desc: "Albea 1.2 8V benzinli motor ünitesi. Kompresyon değerleri standartlara uygundur." },
+            { img: "fiat-albea-1-3-euro4-cikma-motor-tugul-fiat-motor.jpeg", title: "Albea 1.3 Euro4 Dizel Motor", desc: "1.3 Multijet Euro4 Albea motoru. Yağ yakma ve üfleme problemi yoktur." },
+            { img: "fiat-albea-1-3-euro4-cikma-motor-tugul-fiat.jpeg", title: "Albea 1.3 Multijet Çıkma Motor", desc: "Muayyer durumda, montaj garantili Albea 1.3 Euro4 dizel motor ünitesi." },
+            { img: "fiat-albea-1-3-euro4-cikma-motor.jpeg", title: "Albea 1.3 Motor (Euro4)", desc: "Fiat Albea serisi için temiz ve sağlıklı 1.3 dizel motor bloğu." },
+            { img: "fiat-albea-1-4-16-valf-cikma-motor.jpeg", title: "Albea 1.4 16 Valf Motor", desc: "1.4 16V Albea benzinli motor. Performanslı ve bakımlı çıkma motor seçeneği." },
+            { img: "fiat-brava-1-6-16-valf-cikma-motor.jpeg", title: "Brava 1.6 16 Valf Motor", desc: "Brava serisi için nadir bulunan temizlikte 1.6 16V komple çıkma motor." },
+            { img: "fiat-doblo-1-2-8-valf-cikma-motor.jpeg", title: "Doblo 1.2 8 Valf Motor", desc: "1.2 8V Doblo araçlar için ekonomik ve sağlıklı çıkma motor çözümü." },
+            { img: "fiat-doblo-1-2-motor-beyni.jpeg", title: "Doblo 1.2 Motor Beyni", desc: "Teste tabi tutulmuş, yazılımsal ve fiziksel hatası olmayan Doblo 1.2 beyni." },
+            { img: "fiat-doblo-1-3-euro4- 90lik-cikma-motor.jpeg", title: "Doblo 1.3 Euro4 90HP Motor", desc: "90 beygirlik güçlü 1.3 Multijet motor. Kondisyonu yüksek ve temiz." },
+            { img: "fiat-doblo-1-3-euro4-cikma-motor.jpeg", title: "Doblo 1.3 Euro4 Motor", desc: "Standart 1.3 Multijet Euro4 Doblo motor bloğu. Hemen teslim." },
+            { img: "fiat-doblo-1-3-euro5-cikma-motor.jpeg", title: "Doblo 1.3 Euro5 Motor", desc: "Euro5 yeni nesil 1.3 Multijet Doblo motoru. Düşük KM'li araçtan sökülme." },
+            { img: "fiat-doblo-1-3-euro5-cikma-sanziman-tugul-fiat.jpeg", title: "Doblo 1.3 Euro5 Şanzıman", desc: "Euro5 uyumlu, vites senkromeçleri kusursuz temiz şanzıman." },
+            { img: "fiat-doblo-1-3-euro5-cikma-sanziman.jpeg", title: "1.3 Euro5 Doblo Şanzıman", desc: "Testleri yapılmış, montaja hazır Euro5 uyumlu Doblo vites kutusu." },
+            { img: "fiat-doblo-1-3-euro6-adblueli-cikma-motor.jpeg", title: "Doblo 1.3 Euro6 AdBlue Motor", desc: "AdBlue sistemli yeni nesil Euro6 Doblo motoru. Orijinal ve muayyer." },
+            { img: "fiat-doblo-1-3-euro6-cikma-motor-tugul-fiat.jpeg", title: "Doblo 1.3 Euro6 Çıkma Motor", desc: "Yüksek model Doblo araçlardan sökülmüş, revizyon görmemiş Euro6 motor." },
+            { img: "fiat-doblo-1-3-euro6-cikma-motor.jpeg", title: "Doblo 1.3 Motor (Euro6)", desc: "Performans testleri yapılmış temiz Egea/Doblo 1.3 Euro6 motor ünitesi." },
+            { img: "fiat-doblo-1-3-euro6-cikma-sanziman-tugul-fiat.jpeg", title: "Doblo 1.3 Euro6 Şanzıman", desc: "Euro6 Doblo serisi için vites geçişleri kusursuz temiz çıkma şanzıman." },
+            { img: "fiat-doblo-1-3-euro6-cikma-sanziman.jpeg", title: "1.3 Euro6 Doblo Şanzıman", desc: "Ostim teslim veya kargo ile gönderim imkanı olan Euro6 şanzıman." },
+            { img: "fiat-doblo-1-4-16-valf-cikma-motor.jpeg", title: "Doblo 1.4 16 Valf Motor", desc: "Benzinli 1.4 16V Doblo motor ünitesi. Yağ kaçağı olmayan temiz parça." },
+            { img: "fiat-doblo-1-4-8-valf-cikma-motor-tugul-fiat.jpeg", title: "Doblo 1.4 8 Valf Motor", desc: "Dayanıklı 1.4 8V Doblo motoru. Ekonomik ve sağlıklı yedek parça." },
+            { img: "fiat-doblo-1-4-8-valf-cikma-motor.jpeg", title: "Fiat Doblo 1.4 Çıkma Motor", desc: "Muayyer durumda, montaj garantili 1.4 8V motor ünitesi." },
+            { img: "fiat-doblo-1-6-euro5-cikma-motor-tugul-fiat.jpeg", title: "Doblo 1.6 Euro5 Motor", desc: "Güçlü 1.6 Multijet Doblo motoru. Euro5 standartlarında, muayyer." },
+            { img: "fiat-doblo-1-6-euro5-cikma-motor.jpeg", title: "1.6 Euro5 Doblo Çıkma Motor", desc: "Performanslı ve bakımlı 1.6 motor bloğu. Tüm illere kargo." },
+            { img: "fiat-doblo-1-9-jtd-cikma-motor.jpeg", title: "Doblo 1.9 JTD Motor", desc: "Sağlamlığıyla bilinen 1.9 dizel JTD motoru. Yorulmamış ünite." },
+            { img: "fiat-egea-1-3-euro5-cikma-motor-tugul-fiat.jpeg", title: "Egea 1.3 Euro5 Motor", desc: "Egea serisi için Euro5 1.3 Multijet motor. Düşük kilometreli." },
+            { img: "fiat-egea-1-3-euro5-cikma-motor.jpeg", title: "Egea 1.3 Multijet Çıkma Motor", desc: "Hatasız Egea 1.3 motor bloğu. Montaj sonrası performans garantili." },
+            { img: "fiat-egea-1-3-euro5-cikma-sanziman.jpeg", title: "Egea 1.3 Euro5 Şanzıman", desc: "Egea 1.3 vites kutusu. Sorunsuz senkromeç yapısı." },
+            { img: "fiat-egea-1-3-euro6-adblueli-cikma-motor-tugul-fiat.jpeg", title: "Egea 1.3 Euro6 AdBlue Motor", desc: "AdBlue uyumlu Egea Euro6 motor. Yeni nesil araçlar için kusursuz." },
+            { img: "fiat-egea-1-3-euro6-adblueli-cikma-motor.jpeg", title: "Egea 1.3 Euro6 AdBlue Motor", desc: "Hatasız Egea motor ünitesi. Tüm sensörleri üzerinde tam set." },
+            { img: "fiat-egea-1-3-euro6-cikma-motor-tugul-fiat.jpeg", title: "Egea 1.3 Euro6 Çıkma Motor", desc: "Tuğul Fiat güvencesiyle Euro6 standartlarında muayyer Egea motor bloğu." },
+            { img: "fiat-egea-1-3-euro6-cikma-motor.jpeg", title: "Egea 1.3 Euro6 Motor Ünitesi", desc: "Performans testleri yapılmış temiz Egea 1.3 Multijet Euro6 motor." },
+            { img: "fiat-egea-1-3-euro6-cikma-sanziman.jpeg", title: "Egea 1.3 Euro6 Şanzıman", desc: "Euro6 Egea araçlar için orijinal çıkma şanzıman ünitesi." },
+            { img: "fiat-egea-1-4-16-valf-cikma-motor-tugul-fiat-cikma-parca.jpeg", title: "Egea 1.4 16V Çıkma Motor", desc: "Benzinli Egea 1.4 16 valf motor ünitesi. Sessiz çalışma garantisi." },
+            { img: "fiat-egea-1-4-16-valf-cikma-motor-tugul-fiat-motor.jpeg", title: "Egea 1.4 Motor Blok", desc: "Egea benzinli motor grubundan temiz ve sağlıklı çıkma parça." },
+            { img: "fiat-egea-1-4-16-valf-cikma-motor.jpeg", title: "Fiat Egea 1.4 Çıkma Motor", desc: "Düşük KM Egea araçtan sökülmüş 1.4 benzinli motor ünitesi." },
+            { img: "fiat-fiarino-1-3-euro6-cikma-sanziman.jpeg", title: "Fiorino 1.3 Euro6 Şanzıman", desc: "Fiorino Euro6 serisi ile tam uyumlu muayyer çıkma şanzıman." },
+            { img: "fiat-fiorino-1-3-euro5-cikma-motor-tugul-fiat.jpeg", title: "Fiorino 1.3 Euro5 Motor", desc: "Fiat Fiorino 1.3 Multijet Euro5 motor bloğu. Sağlıklı ünite." },
+            { img: "fiat-fiorino-1-3-euro5-cikma-motor.jpeg", title: "Fiorino 1.3 Euro5 Çıkma Motor", desc: "Performansı yüksek, bakımları kontrol edilmiş Fiorino motoru." },
+            { img: "fiat-fiorino-1-3-euro5-cikma-sanziman.jpeg", title: "Fiorino 1.3 Euro5 Şanzıman", desc: "Euro5 Fiorino araçlar için hatasız geçişli vites kutusu." },
+            { img: "fiat-fiorino-1-3-euro6-adblueli-cikma-motor.jpeg", title: "Fiorino 1.3 Euro6 AdBlue Motor", desc: "AdBlue sistemli Fiorino Euro6 motoru. En yeni nesil parça." },
+            { img: "fiat-fiorino-1-3-euro6-cikma-motor.jpeg", title: "Fiorino 1.3 Euro6 Motor", desc: "Hatasız Euro6 Fiorino motor bloğu. Stoktan hemen teslim." },
+            { img: "fiat-linea-1-3-euro4- 90lik-cikma-motor.jpeg", title: "Linea 1.3 Euro4 90HP Motor", desc: "90 beygirlik güçlü 1.3 Multijet Linea motoru. Muayyer parça." },
+            { img: "fiat-linea-1-3-euro4-cikma-motor.jpeg", title: "Linea 1.3 Euro4 Çıkma Motor", desc: "Standart Linea 1.3 motor ünitesi. Kontrolleri yapılmıştır." },
+            { img: "fiat-linea-1-3-euro5-cikma-motor.jpeg", title: "Linea 1.3 Euro5 Motor", desc: "Euro5 Linea araçlar için temiz Multijet çıkma motor bloğu." },
+            { img: "fiat-linea-1-4-8-valf-cikma-motor.jpeg", title: "Linea 1.4 8V Çıkma Motor", desc: "Benzinli Linea 1.4 motor seçeneği. Bakımlı ve sağlıklı." },
+            { img: "fiat-linea-1-6-euro5-cikma-motor-tugul-fiat.jpeg", title: "Linea 1.6 Euro5 Motor", desc: "Güçlü 1.6 Multijet Linea motoru. Performans garantili parça." },
+            { img: "fiat-linea-1-6-euro5-cikma-motor.jpeg", title: "Linea 1.6 Euro5 Çıkma Motor", desc: "Hatasız 1.6 Linea motor ünitesi. 81 ile aynı gün kargo." },
+            { img: "fiat-marea-1-6-16-valf-cikma-motor.jpeg", title: "Marea 1.6 16V Motor", desc: "Fiat Marea efsanesi için sağlıklı 1.6 16 valf motor ünitesi." },
+            { img: "fiat-palio-1-3-euro4-cikma-motor.jpeg", title: "Palio 1.3 Euro4 Motor", desc: "Palio Multijet serisi için Euro4 uyumlu temiz çıkma motor." },
+            { img: "fiat-palio-1-4-16-valf-cikma-motor.jpeg", title: "Palio 1.4 16V Motor", desc: "1.4 16 valf Fiat Palio motoru. Muayyer ve hatasız ünite." },
+            { img: "fiat-panda-1-2-8-valf-cikma-motor.jpeg", title: "Panda 1.2 8V Çıkma Motor", desc: "Panda 1.2 motor bloğu. Şehir içi araçlar için sağlıklı çözüm." },
+            { img: "fiat-punto-1-3-euro4-cikma-motor.jpeg", title: "Punto 1.3 Euro4 Motor", desc: "Grande Punto ve Punto Evo uyumlu Euro4 1.3 Multijet motor." },
+            { img: "fiat-punto-1-3-euro5-cikma-motor-tugul-fiat.jpeg", title: "Punto 1.3 Euro5 Motor", desc: "Punto Euro5 Multijet motor bloğu. Düşük kilometreli muayyer parça." },
+            { img: "fiat-punto-1-3-euro5-cikma-motor.jpeg", title: "Punto 1.3 Euro5 Çıkma Motor", desc: "Hatasız Punto Euro5 motor ünitesi. Tüm Türkiye'ye gönderilir." },
+            { img: "fiat-punto-1-4-8-valf-cikma-motor.jpeg", title: "Punto 1.4 8V Motor", desc: "Punto 1.4 benzinli motor ünitesi. Sessiz çalışma performansı." },
+            { img: "fiat-stilo-1-9-jtd-cikma-motor.jpeg", title: "Stilo 1.9 JTD Motor", desc: "Stilo 1.9 dizel motor bloğu. Güçlü ve dayanıklı muayyer ünite." },
+            { img: "renault-kangoo-1-9-cikma-motor.jpeg", title: "Kangoo 1.9 Çıkma Motor", desc: "Kangoo 1.9 dizel motor ünitesi. Kontrolleri yapılmış çıkma parça." }
+        ];
+
+        const container = document.getElementById('product-container');
+        const phoneWA = "05312902977";
+
+        function render() {
+            products.forEach(p => {
+                const waLink = `https://wa.me/90${phoneWA}?text=${encodeURIComponent("Merhaba Tuğul Fiat, " + p.title + " ürünü hakkında bilgi alabilir miyim?")}`;
+                
+                const card = `
+                    <article class="product-card">
+                        <div class="product-img">
+                            <span class="product-badge">STOKTA VAR</span>
+                            <img src="${p.img}" alt="${p.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=Görsel+Hazırlanıyor'">
+                        </div>
+                        <div class="product-body">
+                            <h3>${p.title}</h3>
+                            <p>${p.desc}</p>
+                            <div class="btn-group">
+                                <a href="${waLink}" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Fiyat Sor</a>
+                                <a href="tel:05366562363" class="btn btn-call"><i class="fa fa-phone"></i> Ara</a>
+                            </div>
+                        </div>
+                    </article>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        render();
+    </script>
+</body>
+</html>t çıkma parça uzmanı Tuğul Fiat. Doblo, Egea, Fiorino, Linea çıkma motor ve şanzıman seçenekleri. 81 ile kargo imkanı.">
     <meta name="keywords" content="Ostim Fiat Çıkma Parça, Ankara Fiat Yedek Parça, Fiat Çıkma Motor, Fiat Çıkma Şanzıman, Tuğul Fiat Ostim">
     <meta name="author" content="Nokta Sosyal Medya">
 
@@ -127,7 +386,7 @@
 <body>
 
     <nav>
-        <div class="logo"><img src="tugul-fiat.jpeg" alt="Tuğul Fiat"></div>
+        <div class="logo"><img src="tugul-fiat.jpg" alt="Tuğul Fiat"></div>
         <div class="nav-actions">
             <a href="tel:05366562363" class="contact-link"><i class="fa fa-phone"></i> 0536 656 23 63</a>
             <a href="tel:05312902977" class="contact-link red"><i class="fa fa-phone"></i> 0531 290 29 77</a>
