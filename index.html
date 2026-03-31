@@ -1,2 +1,71 @@
-DENEME WEBSITE LOADING
-BU WEB SİTESİ TUĞUL FİAT ADINA DÜZENLENMEKTEDİR
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuğul Fiat - Yükleniyor</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f172a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #cbd5f5;
+        }
+
+        .loader {
+            margin: 30px auto;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #1e293b;
+            border-top: 5px solid #22c55e;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .brand {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #22c55e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>DENEME WEBSITE LOADING</h1>
+
+        <div class="loader"></div>
+
+        <p>Bu web sitesi şu anda hazırlanıyor.</p>
+        <p class="brand">TUĞUL FİAT ADINA DÜZENLENMEKTEDİR</p>
+    </div>
+
+</body>
+</html>
